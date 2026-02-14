@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/heart.gif">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+    <div class="step active" id="step1">
+        <img src="images/AshSnow.gif" class="cat-img">
+        <h1>Will you be my Valentine? 💖</h1>
+        <div class="buttons">
+            <button class="btn btn-yes" onclick="goToStep2()">Yes</button>
+            <button class="btn btn-no" onmouseover="moveButton(this)">No</button>
+        </div>
+    </div>
+
+    <div class="step" id="step2">
+        <img src="images/are u sure.gif" class="cat-img">
+        <h1>Are you 100% sure? 😼</h1>
+        <div class="buttons">
+            <button class="btn btn-yes" onclick="goToStep3()">Yes, sure!</button>
+            <button class="btn btn-no" onmouseover="moveButton(this)">Wait...</button>
+        </div>
+    </div>
+
+    <div class="step" id="step3">
+        <img src="images/Hugging.gif" class="cat-img">
+        <h1>Promise me forever ❤️</h1>
+        <div class="buttons">
+            <button class="btn btn-yes" onclick="finalStep()">I Promise</button>
+        </div>
+    </div>
+
+    <div class="final-message">
+        <img src="images/kisses.jpg" class="cat-img">
+        <h2>I love youuu Karina🥰</h2>
+        <a href="https://t.me/aapisyatodin" target="_blank" class="telegram-btn">
+            Text me 💌
+        </a>
+    </div>
+
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

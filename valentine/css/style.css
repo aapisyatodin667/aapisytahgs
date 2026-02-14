@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.cat-img {
+    width: 200px;
+    max-width: 80%;
+}
+
+h1, h2 {
+    color: white;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-yes {
+    background: #ff4e50;
+    color: white;
+}
+
+.btn-yes:hover {
+    transform: scale(1.1);
+}
+
+.btn-no {
+    background: white;
+    color: #ff4e50;
+}
+
+.final-message {
+    display: none;
+}
+
+.telegram-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100vh); opacity: 0; }
+}
+
+#fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
